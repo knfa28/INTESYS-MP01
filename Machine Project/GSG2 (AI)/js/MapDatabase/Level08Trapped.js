@@ -1,0 +1,28 @@
+function Level08Trapped(ListofLevels, preloader) {var lvllayoutLevel08Trapped=[[0,3,3,3,3,3,5,0,0,0,0,0,0,0,0,0,0,0,0,3],[3,3,3,5,3,3,3,3,3,3,3,0,3,3,3,0,3,3,0,3],[3,3,3,0,3,3,0,0,0,0,0,0,0,0,0,0,3,0,0,3],[3,3,3,0,3,3,3,0,0,0,0,0,0,0,0,0,3,3,0,3],[3,3,3,0,3,3,3,0,0,0,3,3,3,0,0,0,0,3,0,3],[3,3,3,0,3,3,3,0,0,3,3,5,3,3,3,3,3,3,0,3],[3,3,3,0,3,3,3,0,0,3,3,0,0,3,3,3,3,3,0,3],[3,3,3,0,3,3,3,0,0,0,3,0,0,3,5,0,0,0,0,3],[3,0,1,0,3,3,0,0,0,0,3,0,3,3,3,3,3,3,0,3],[3,3,0,0,3,0,0,0,0,0,3,0,3,3,3,3,0,0,0,3],[3,3,0,0,3,3,3,0,0,0,3,0,3,0,0,0,0,0,0,3],[3,3,0,0,3,3,3,0,3,3,3,0,3,0,0,0,0,0,0,3],[3,0,0,0,3,0,0,0,0,3,3,0,3,0,0,0,0,0,0,3],[3,0,0,0,3,3,0,3,3,3,3,0,3,0,0,0,0,0,0,3],[3,0,0,0,3,3,0,0,0,3,3,0,3,0,0,0,0,0,0,3],[3,0,0,0,3,3,0,0,0,0,3,0,3,0,0,0,0,0,0,3],[3,0,0,0,3,5,0,0,0,0,3,0,0,0,0,0,0,0,0,3],[3,0,0,0,3,3,3,3,3,3,3,0,0,0,0,0,0,0,0,3],[3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3],[3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3]];
+this.mapLevel08Trapped = new Map(lvllayoutLevel08Trapped,preloader);
+this.waypointsBot1= new Array();
+this.waypointsBot1.push(new Point(6,3));
+this.waypointsBot1.push(new Point(3,3));
+this.Bot1= new ENEMY(this.waypointsBot1[0].x,this.waypointsBot1[0].y,this.waypointsBot1,lvllayoutLevel08Trapped,preloader);
+this.mapLevel08Trapped.addEnemy(this.Bot1);
+this.waypointsBot2= new Array();
+this.waypointsBot2.push(new Point(0,7));
+this.waypointsBot2.push(new Point(0,10));
+this.Bot2= new ENEMY(this.waypointsBot2[0].x,this.waypointsBot2[0].y,this.waypointsBot2,lvllayoutLevel08Trapped,preloader);
+this.mapLevel08Trapped.addEnemy(this.Bot2);
+this.waypointsBot3= new Array();
+this.waypointsBot3.push(new Point(7,15));
+this.waypointsBot3.push(new Point(7,17));
+this.Bot3= new ENEMY(this.waypointsBot3[0].x,this.waypointsBot3[0].y,this.waypointsBot3,lvllayoutLevel08Trapped,preloader);
+this.mapLevel08Trapped.addEnemy(this.Bot3);
+this.waypointsBot4= new Array();
+this.waypointsBot4.push(new Point(8,11));
+this.waypointsBot4.push(new Point(12,11));
+this.Bot4= new ENEMY(this.waypointsBot4[0].x,this.waypointsBot4[0].y,this.waypointsBot4,lvllayoutLevel08Trapped,preloader);
+this.mapLevel08Trapped.addEnemy(this.Bot4);
+this.waypointsBot5= new Array();
+this.waypointsBot5.push(new Point(11,18));
+this.waypointsBot5.push(new Point(17,15));
+this.Bot5= new ENEMY(this.waypointsBot5[0].x,this.waypointsBot5[0].y,this.waypointsBot5,lvllayoutLevel08Trapped,preloader);
+this.mapLevel08Trapped.addEnemy(this.Bot5);
+ListofLevels.push(this.mapLevel08Trapped);}

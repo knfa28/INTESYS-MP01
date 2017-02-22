@@ -1,0 +1,23 @@
+function Level06ALittleSecret(ListofLevels, preloader) {var lvllayoutLevel06ALittleSecret=[[5,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,3,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,3,0],[0,0,3,0,0,0,0,3,0,0,0,0,0,0,0,0,0,3,3,0],[0,0,0,3,0,0,0,3,0,0,0,0,0,0,0,0,0,3,0,0],[0,0,0,0,3,0,0,3,0,0,0,0,0,0,0,0,3,3,0,0],[0,0,0,0,0,3,3,3,3,3,0,0,0,0,0,0,3,0,0,0],[0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,3,0,0,0,0],[0,0,0,0,0,0,3,3,0,0,0,0,0,0,0,3,0,0,0,0],[0,0,0,0,0,0,0,3,0,0,0,0,0,3,3,0,0,0,0,0],[0,0,0,0,0,0,0,0,3,0,0,3,3,3,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,3,3,3,3,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,3,3,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,3,3,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,3,3,0,3,3,3,0,0,0,0,0,0],[0,0,0,0,0,0,0,3,3,0,0,0,0,3,3,3,0,0,0,0],[0,0,0,0,0,3,3,0,0,0,0,0,0,0,0,3,3,0,0,0],[0,0,0,3,3,3,0,0,0,0,0,0,0,0,0,0,3,3,0,0],[0,0,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0],[3,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,0]];
+this.mapLevel06ALittleSecret = new Map(lvllayoutLevel06ALittleSecret,preloader);
+this.waypointsBot1= new Array();
+this.waypointsBot1.push(new Point(12,6));
+this.waypointsBot1.push(new Point(12,15));
+this.Bot1= new ENEMY(this.waypointsBot1[0].x,this.waypointsBot1[0].y,this.waypointsBot1,lvllayoutLevel06ALittleSecret,preloader);
+this.mapLevel06ALittleSecret.addEnemy(this.Bot1);
+this.waypointsBot2= new Array();
+this.waypointsBot2.push(new Point(7,12));
+this.waypointsBot2.push(new Point(1,12));
+this.Bot2= new ENEMY(this.waypointsBot2[0].x,this.waypointsBot2[0].y,this.waypointsBot2,lvllayoutLevel06ALittleSecret,preloader);
+this.mapLevel06ALittleSecret.addEnemy(this.Bot2);
+this.waypointsBot3= new Array();
+this.waypointsBot3.push(new Point(5,1));
+this.waypointsBot3.push(new Point(15,1));
+this.Bot3= new ENEMY(this.waypointsBot3[0].x,this.waypointsBot3[0].y,this.waypointsBot3,lvllayoutLevel06ALittleSecret,preloader);
+this.mapLevel06ALittleSecret.addEnemy(this.Bot3);
+this.waypointsBot4= new Array();
+this.waypointsBot4.push(new Point(16,19));
+this.waypointsBot4.push(new Point(6,19));
+this.Bot4= new ENEMY(this.waypointsBot4[0].x,this.waypointsBot4[0].y,this.waypointsBot4,lvllayoutLevel06ALittleSecret,preloader);
+this.mapLevel06ALittleSecret.addEnemy(this.Bot4);
+ListofLevels.push(this.mapLevel06ALittleSecret);}
